@@ -58,49 +58,6 @@
             letter-spacing: 1px;
         }
 
-        .locations {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 40px;
-            flex-wrap: wrap;
-        }
-
-        .location {
-            text-align: center;
-            padding: 20px;
-            background-color: white;
-            border-radius: 0;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-            width: 200px;
-            position: relative;
-            cursor: default;
-        }
-
-        .location-name {
-            font-weight: 400;
-            font-size: 18px;
-            color: var(--primary-color);
-        }
-
-        .location-info {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            background-color: white;
-            padding: 15px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            z-index: 10;
-            pointer-events: none;
-        }
-
-        .location:hover .location-info {
-            opacity: 1;
-        }
-
         .content {
             flex: 1;
             margin-top: 40px;
@@ -184,17 +141,17 @@
             letter-spacing: 0.5px;
         }
 
-        .menu-item {
-            margin-bottom: 15px;
+        .art-item {
+            margin-bottom: 20px;
         }
 
-        .menu-item-name {
+        .art-title {
             font-weight: bold;
             font-size: 18px;
+            margin-bottom: 5px;
         }
 
-        .menu-item-description {
-            font-style: italic;
+        .art-description {
             color: var(--secondary-color);
         }
 
@@ -218,6 +175,14 @@
             letter-spacing: 1px;
         }
 
+        .workshop-list {
+            margin-top: 10px;
+        }
+
+        .workshop-item {
+            margin-bottom: 8px;
+        }
+
         @media (max-width: 768px) {
             .logo {
                 font-size: 60px;
@@ -237,25 +202,8 @@
 
     <div class="container">
         <div class="header">
-            <div class="logo">Gratified</div>
+            <div class="logo">Gratified <strong>Art</strong></div>
             <div class="tagline">coffee+art</div>
-            
-            <div class="locations">
-                <div class="location">
-                    <div class="location-name">Berkeley</div>
-                    <div class="location-info">Lighthaven on Telegraph</div>
-                </div>
-                
-                <div class="location">
-                    <div class="location-name">San Francisco</div>
-                    <div class="location-info">Capp / 17th</div>
-                </div>
-                
-                <div class="location">
-                    <div class="location-name">[private location]</div>
-                    <div class="location-info">By invitation only</div>
-                </div>
-            </div>
             
             <div class="site-indicator">
                 <div class="dot" onclick="window.location.href='https://gratified.com'"></div>
@@ -279,10 +227,10 @@
             <div class="section">
                 <h2 class="section-title">Art Therapy Workshops <span class="coming-soon">October</span></h2>
                 <p>Join our founder Azmyth for art therapy workshops at rotating locations:</p>
-                <div style="margin-top: 10px;">
-                    <p>Butoh dancing</p>
-                    <p>Disturbing noises</p>
-                    <p>Make-your-own-mysticloak</p>
+                <div class="workshop-list">
+                    <div class="workshop-item">Butoh dancing</div>
+                    <div class="workshop-item">Disturbing noises</div>
+                    <div class="workshop-item">Make-your-own-mysticloak</div>
                 </div>
             </div>
         </div>
